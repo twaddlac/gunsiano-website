@@ -246,6 +246,11 @@ class Publication(models.Model):
 
         return (year, month, day)
 
+class Links(models.Model):
+
+    links = models.CharField(max_length=50)
+    def __unicode__(self):
+        return self.links
 
 class JoinLabSection(models.Model):
     """

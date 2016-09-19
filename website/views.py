@@ -95,6 +95,14 @@ def publications(request):
         pub.italicize_species_names()
 
     return render(request, 'publications.html', {'publications': pubs})
+	
+def links(request):
+    """
+    Links page
+    """
+    links = "i am a link."
+
+    return render(request, 'links.html', {'links': links})
 
 
 def join(request):
